@@ -11,7 +11,7 @@ function registerAbsoluteImport(template, componentName, appName) {
     Object.defineProperty(_exports, "__esModule", {
       value: true
     });
-    const tpl = JSON.parse(atob(template));
+    const tpl = JSON.parse(template);
     _exports.default = createTemplateFactory(tpl);
     return _exports;
   });
