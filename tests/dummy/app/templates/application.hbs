@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<InlineComponentTemplate name="congrats">
+  Hello, World, I'm {{@name}}
+</InlineComponentTemplate>
+
+{{component (from-inline-template "congrats") name="Template"}}
+

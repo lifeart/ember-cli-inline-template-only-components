@@ -1,7 +1,7 @@
 ember-cli-inline-template-only-components
 ==============================================================================
 
-[Short description of the addon.]
+This addon allow developers create inline template only components.
 
 
 Compatibility
@@ -23,8 +23,21 @@ ember install ember-cli-inline-template-only-components
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+* wrap template logic inside `InlineComponentTemplate` component.
+* specify local name in `name` attribute.
 
+* invoke locally defined component using `component` helper and `from-inline-template` helper.
+
+```hbs
+
+<InlineComponentTemplate name="congrats">
+  Hello, World, I'm {{@name}}
+</InlineComponentTemplate>
+
+{{component (from-inline-template "congrats") name="Template"}}
+
+
+```
 
 Contributing
 ------------------------------------------------------------------------------

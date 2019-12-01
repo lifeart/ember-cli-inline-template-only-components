@@ -1,13 +1,13 @@
 {
   "name": "ember-cli-inline-template-only-components",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Inline Templates for EmberJS",
   "keywords": [
-    "ember-addon"
+    "ember-addon", "templates"
   ],
-  "repository": "",
+  "repository": "https://github.com/lifeart/ember-cli-inline-template-only-components.git",
   "license": "MIT",
-  "author": "",
+  "author": "Aleksandr Kanunnikov <lifeart92@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -21,6 +21,7 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
+    "calculate-cache-key-for-tree": "^2.0.0",
     "ember-cli-babel": "^7.11.1",
     "ember-cli-htmlbars": "^4.0.5"
   },
@@ -54,6 +55,7 @@
     "node": "8.* || >= 10.*"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "before": "ember-template-compiler"
   }
 }
