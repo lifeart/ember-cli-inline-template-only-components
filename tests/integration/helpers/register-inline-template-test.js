@@ -12,6 +12,6 @@ module('Integration | Helper | register-inline-template', function(hooks) {
 
     await render(hbs`{{register-inline-template inputValue}}`);
 
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), '');
   });
 });
