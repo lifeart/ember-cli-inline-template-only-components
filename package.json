@@ -1,9 +1,10 @@
 {
   "name": "ember-cli-inline-template-only-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Inline Templates for EmberJS",
   "keywords": [
-    "ember-addon", "templates"
+    "ember-addon",
+    "templates"
   ],
   "repository": "https://github.com/lifeart/ember-cli-inline-template-only-components.git",
   "license": "MIT",
