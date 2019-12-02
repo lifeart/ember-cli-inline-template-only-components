@@ -36,8 +36,10 @@ Usage
 
 {{component (from-inline-template "congrats") name="Template"}}
 
-
 ```
+
+** nested `InlineComponentTemplate`s not suppoprted.
+
 
 Contributing
 ------------------------------------------------------------------------------
