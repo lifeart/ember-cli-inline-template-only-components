@@ -55,6 +55,12 @@
   "engines": {
     "node": "8.* || >= 10.*"
   },
+  "ember-language-server": {
+    "entry": "./lib/langserver",
+    "capabilities": {
+      "completionProvider": true
+    }
+  },
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "before": "ember-template-compiler"
